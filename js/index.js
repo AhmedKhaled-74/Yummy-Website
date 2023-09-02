@@ -554,14 +554,15 @@ $(".form-inputs").on("input", () => {
     $(".sub-btn").removeAttr("disabled");
   }
 });
-$(".sub-btn").on("click", () => {
+$(".sub-btn").on("click", (e) => {
+  e.preventDefault();
   $(".spinner").show(0, () => {
     $(".loading-screen").show(0);
     $("body,html").css("overflow", "hidden");
   });
 
   $(".data-container").html(
-    "<div class='text-center vh-90 d-flex justify-content-center flex-column gap-4 align-items-center my-2'><h2>Thanks For Registration ❤ </h2> <button class='btn btn-outline-success sub-btn back-btn'>Back To Home <i class='fa-solid fa-backward'></i> </button></div>"
+    "<div class='text-center vh-90 d-flex justify-content-center flex-column gap-4 align-items-center my-2'><h2>Thanks For Registration ❤ </h2> <button class='btn btn-outline-success back-btn'>Back To Home <i class='fa-solid fa-backward'></i> </button></div>"
   );
   $(".spinner").fadeOut(1700, () => {
     $(".loading-screen").fadeOut(700);
