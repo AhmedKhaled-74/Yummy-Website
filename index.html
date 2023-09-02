@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Yummy</title>
+
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <main class="warrper">
+      <aside class="d-flex">
+        <div class="nav-container">
+          <nav
+            class="py-4 px-3 d-flex flex-column justify-content-between h-100"
+          >
+            <ul
+              class="nav-list d-flex flex-column gap-2 list-unstyled overflow-hidden"
+            >
+              <li class="animate__animated">
+                <a class="text-decoration-none search-btn">Search</a>
+              </li>
+              <li class="animate__animated animate__delay-2s">
+                <a class="text-decoration-none category-btn">Categories</a>
+              </li>
+              <li class="animate__animated animate__delay-3s">
+                <a class="text-decoration-none area-btn">Areas</a>
+              </li>
+              <li class="animate__animated animate__delay-4s">
+                <a class="text-decoration-none intr-btn">Ingredients</a>
+              </li>
+              <li class="animate__animated animate__delay-5s">
+                <a class="text-decoration-none contact-btn">Contact Us</a>
+              </li>
+            </ul>
+            <div class="footer-nav d-flex flex-column gap-3">
+              <div class="social-box d-flex gap-2">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-solid fa-globe"></i>
+              </div>
+              <p>
+                Copyright Eng/ <strong>Ahmed Khaled</strong> &copy; 2023 All
+                Rights Reserved.
+              </p>
+            </div>
+          </nav>
+        </div>
+        <div class="options">
+          <div
+            class="icons-box d-flex flex-column align-items-center p-4 bg-white text-black h-100 justify-content-between"
+          >
+            <img src="./img/logo.png" alt="Yummy logo" class="logo" />
+
+            <i class="fa fa-solid fa-bars btn-menu"></i>
+
+            <div class="sharing-box d-flex flex-column gap-1">
+              <i class="fa-solid fa-globe"></i>
+
+              <i class="fa-solid fa-share-nodes"></i>
+            </div>
+          </div>
+        </div>
+      </aside>
+      <div class="data-box">
+        <div class="container py-3 p-md-5">
+          <!-- Meals search -->
+          <div class="search-box mb-5 d-none">
+            <div class="row g-3">
+              <div class="col-md-6">
+                <input
+                  type="text"
+                  class="form-control bg-transparent search-name"
+                  placeholder="Search By Name"
+                />
+              </div>
+              <div class="col-md-6">
+                <input
+                  type="text"
+                  class="form-control bg-transparent search-letter"
+                  maxlength="1"
+                  placeholder="Search By First Letter"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="row g-3 data-container"></div>
+
+          <!-- Cotact Us -->
+
+          <form class="form-box d-none">
+            <div class="row g-3">
+              <div class="col-md-6 d-flex flex-column gap-2">
+                <input
+                  type="text"
+                  class="form-control form-inputs name-input"
+                  placeholder="Enter Your Name"
+                />
+                <div class="w-100 wrong-input rounded-2 name-wrong">
+                  Special characters and numbers not allowed and must be between
+                  [3~21]
+                </div>
+              </div>
+              <div class="col-md-6 d-flex flex-column gap-2">
+                <input
+                  type="text"
+                  class="form-control form-inputs email-input"
+                  placeholder="Enter Your Email"
+                />
+                <div class="w-100 wrong-input email-wrong rounded-2">
+                  Email not valid *exemple@yyy.zzz
+                </div>
+              </div>
+              <div class="col-md-6 d-flex flex-column gap-2">
+                <input
+                  type="text"
+                  class="form-control form-inputs phone-input"
+                  placeholder="Enter Your Phone"
+                />
+                <div class="w-100 wrong-input phone-wrong rounded-2">
+                  Enter valid Phone Number
+                </div>
+              </div>
+              <div class="col-md-6 d-flex flex-column gap-2">
+                <input
+                  type="text"
+                  class="form-control form-inputs age-input"
+                  placeholder="Enter Your Age"
+                />
+                <div class="w-100 wrong-input age-wrong rounded-2">
+                  Enter valid age
+                </div>
+              </div>
+              <div class="col-md-6 d-flex flex-column gap-2">
+                <input
+                  type="password"
+                  class="form-control form-inputs password-input"
+                  placeholder="Enter Your Password"
+                />
+                <div class="w-100 wrong-input pass-wrong rounded-2">
+                  Enter valid password *Minimum eight characters, at least one
+                  letter and one number:*
+                </div>
+              </div>
+              <div class="col-md-6 d-flex flex-column gap-2">
+                <input
+                  type="password"
+                  class="form-control form-inputs repass-input"
+                  placeholder="Re-Enter Your Password"
+                />
+                <div class="w-100 wrong-input repass-wrong rounded-2">
+                  Password doesn't match twice
+                </div>
+              </div>
+              <button class="btn btn-outline-danger sub-btn" disabled>
+                Submit
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <aside class="loading-screen">
+      <div class="sk-fading-circle spinner">
+        <div class="sk-circle1 sk-circle"></div>
+        <div class="sk-circle2 sk-circle"></div>
+        <div class="sk-circle3 sk-circle"></div>
+        <div class="sk-circle4 sk-circle"></div>
+        <div class="sk-circle5 sk-circle"></div>
+        <div class="sk-circle6 sk-circle"></div>
+        <div class="sk-circle7 sk-circle"></div>
+        <div class="sk-circle8 sk-circle"></div>
+        <div class="sk-circle9 sk-circle"></div>
+        <div class="sk-circle10 sk-circle"></div>
+        <div class="sk-circle11 sk-circle"></div>
+        <div class="sk-circle12 sk-circle"></div>
+      </div>
+    </aside>
+    <script src="./js/code.jquery.com_jquery-3.7.0.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
