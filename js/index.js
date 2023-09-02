@@ -90,6 +90,7 @@ $(".contact-btn")
       $("body,html").css("overflow", "hidden");
     });
     $(".data-container").html("");
+    $(".data-container").addClass("d-none");
     $(".form-box").removeClass("d-none");
     $(".wrong-input").addClass("d-none");
     $(".form-inputs").val("");
@@ -102,6 +103,7 @@ $(".contact-btn")
   .siblings()
   .find("a")
   .on("click", () => {
+    $(".data-container").removeClass("d-none");
     $(".form-box").addClass("d-none");
     $(".wrong-input").addClass("d-none");
     $(".form-inputs").val("");
