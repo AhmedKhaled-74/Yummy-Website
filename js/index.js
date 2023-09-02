@@ -89,10 +89,10 @@ $(".contact-btn")
       $(".loading-screen").show(0);
       $("body,html").css("overflow", "hidden");
     });
+    $(".data-container").html("");
     $(".form-box").removeClass("d-none");
     $(".wrong-input").addClass("d-none");
     $(".form-inputs").val("");
-    $(".data-container").html("");
     $(".spinner").fadeOut(400, () => {
       $(".loading-screen").fadeOut(300);
       $("body,html").css("overflow", "auto");
