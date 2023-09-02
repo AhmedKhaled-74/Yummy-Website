@@ -485,7 +485,7 @@ function emailValidation() {
 }
 
 function phoneValidation() {
-  const regex = /^(?:\+20|0)[1-9]\d{8}$/;
+  const regex = /^(?:\+20|0|0020)[1-9]\d{8}$/;
   return regex.test($(".phone-input").val());
 }
 function ageValidation() {
